@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guessing Game</title>
+  </head>
+  <body>
+    <h1>Guess a Number between {{ min }} and {{ max }}</h1>
+    <p>Is your number {{ guess }}?</p>
+    <form method="post">
+      <input type="hidden" name="min" value="{{ min }}">
+      <input type="hidden" name="max" value="{{ max }}">
+      <button type="submit" name="user_response" value="Too small">Too small</button>
+      <button type="submit" name="user_response" value="You win">You win</button>
+      <button type="submit" name="user_response" value="Too big">Too big</button>
+    </form>
+  </body>
+</html>
